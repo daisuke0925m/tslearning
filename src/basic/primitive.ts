@@ -1,3 +1,4 @@
 export default function primitiveSample() {
-    console.log('foo')
+    const name = 'ストリング'
+    console.log(typeof name, name)
 }
