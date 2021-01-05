@@ -8,4 +8,14 @@ export default function notExistSample() {
     } else {
         console.log(name)
     }
+
+    let age = undefined
+    console.log(typeof age, age)
+
+    age = 28
+    if (!age) {
+        console.log(age)
+    } else {
+        console.log(age)
+    }
 }
