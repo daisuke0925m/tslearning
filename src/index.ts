@@ -4,6 +4,7 @@
 // const world = new World('Hello World!!!')
 // world.sayHello(root)
 
-import { primitiveSample } from './basic'
+import { primitiveSample, noExistSample } from './basic'
 
 primitiveSample()
+noExistSample()
