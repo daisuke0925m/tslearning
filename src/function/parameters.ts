@@ -17,3 +17,9 @@ export const isUserSignedIn2 = (userId: string, username = 'NO NAME'): boolean =
         return false
     }
 }
+
+export const sumProductsPrice = (...productsPrice: number[]): number => {
+    return productsPrice.reduce((prevTotal: number, productPrice: number) => {
+        return prevTotal + productPrice
+    }, 0)
+}

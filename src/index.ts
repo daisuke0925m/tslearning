@@ -11,11 +11,13 @@
 // anySample()
 // unknownSample()
 
-import { logMessage } from './function/basic'
-import { isUserSignedIn, isUserSignedIn2 } from './function/parameters'
+// import { logMessage } from './function/basic'
+import { isUserSignedIn, isUserSignedIn2, sumProductsPrice } from './function/parameters'
 
-logMessage('Hello TypeScript')
-isUserSignedIn('ABC', 'kkk')
-isUserSignedIn('ABC')
-isUserSignedIn2('ABC')
-isUserSignedIn2('ABC', 'kkk')
+// logMessage('Hello TypeScript')
+// isUserSignedIn('ABC', 'kkk')
+// isUserSignedIn('ABC')
+// isUserSignedIn2('ABC')
+// isUserSignedIn2('ABC', 'kkk')
+const sum = sumProductsPrice(100, 200, 300, 400)
+console.log(sum)
