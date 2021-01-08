@@ -11,3 +11,7 @@ export const logMessage3 = function (message: string): void {
 }
 
 export const logMessage4 = (message: string): void => console.log('Function basic sample 1:', message)
+
+export const alwaysThrowError = (message: string): never => {
+    throw new Error(message)
+}
