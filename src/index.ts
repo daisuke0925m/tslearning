@@ -10,3 +10,7 @@
 // noExistSample()
 // anySample()
 // unknownSample()
+
+import { logMessage } from './function/basic'
+
+logMessage('Hello TypeScript')
