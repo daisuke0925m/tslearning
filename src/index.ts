@@ -12,8 +12,10 @@
 // unknownSample()
 
 import { logMessage } from './function/basic'
-import { isUserSignedIn } from './function/parameters'
+import { isUserSignedIn, isUserSignedIn2 } from './function/parameters'
 
 logMessage('Hello TypeScript')
 isUserSignedIn('ABC', 'kkk')
 isUserSignedIn('ABC')
+isUserSignedIn2('ABC')
+isUserSignedIn2('ABC', 'kkk')
