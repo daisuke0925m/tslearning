@@ -29,7 +29,6 @@ export default function objectSample() {
         lastName: 'Yamada',
         firstName: 'Taro',
     }
-
     Human.gender = 'male'
     Human.lastName = 'tana'
     console.log(Human)
@@ -40,8 +39,6 @@ export default function objectSample() {
         Japan: 'Tokyo',
         Korea: 'Seoul',
     }
-
     capitals.China = 'Beijing'
-
     console.log(capitals)
 }
