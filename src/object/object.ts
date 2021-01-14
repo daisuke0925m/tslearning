@@ -11,4 +11,6 @@ export default function objectSample() {
         language: 'japanese',
         name: 'Japan',
     }
+
+    console.log(country)
 }
