@@ -18,4 +18,18 @@ export default function objectSample() {
         name: 'USA',
     }
     console.log(country)
+
+    const Human: {
+        age: number
+        lastName: string
+        readonly firstName: string
+        gender?: string
+    } = {
+        age: 28,
+        lastName: 'Yamada',
+        firstName: 'Taro',
+    }
+
+    Human.gender = 'male'
+    Human.lastName = 'tana'
 }
