@@ -33,4 +33,15 @@ export default function objectSample() {
     Human.gender = 'male'
     Human.lastName = 'tana'
     console.log(Human)
+
+    const capitals: {
+        [countryName: string]: string
+    } = {
+        Japan: 'Tokyo',
+        Korea: 'Seoul',
+    }
+
+    capitals.China = 'Beijing'
+
+    console.log(capitals)
 }
