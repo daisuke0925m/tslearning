@@ -4,13 +4,18 @@ export default function objectSample() {
     //     age: 28
     // }
 
-    const country: {
+    let country: {
         language: string
         name: string
     } = {
         language: 'japanese',
         name: 'Japan',
     }
+    console.log(country)
 
+    country = {
+        language: 'English',
+        name: 'USA',
+    }
     console.log(country)
 }
