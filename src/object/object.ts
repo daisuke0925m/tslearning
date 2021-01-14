@@ -32,4 +32,5 @@ export default function objectSample() {
 
     Human.gender = 'male'
     Human.lastName = 'tana'
+    console.log(Human)
 }
