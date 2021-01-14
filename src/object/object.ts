@@ -3,4 +3,12 @@ export default function objectSample() {
     //     name: 'name',
     //     age: 28
     // }
+
+    const country: {
+        language: string
+        name: string
+    } = {
+        language: 'japanese',
+        name: 'Japan',
+    }
 }
