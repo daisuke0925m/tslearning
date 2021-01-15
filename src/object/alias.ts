@@ -53,4 +53,14 @@ export default function typeAliasSample() {
 
     console.log(adventurer1)
     console.log(adventurer2)
+
+    const paladin: Paladin = {
+        hp: 180,
+        sp: 30,
+        mp: 30,
+        weapon: '銀のつるぎ',
+        swordSkill: '三連斬り',
+        magicSkill: 'ファイアーボール',
+    }
+    console.log(paladin)
 }
