@@ -27,3 +27,6 @@
 
 // import typeAliasSample from './object/alias'
 // typeAliasSample()
+
+import arraySample from './array/array'
+arraySample()
