@@ -28,5 +28,8 @@
 // import typeAliasSample from './object/alias'
 // typeAliasSample()
 
-import arraySample from './array/array'
-arraySample()
+// import arraySample from './array/array'
+// arraySample()
+
+import tupleSample from './array/tuple'
+tupleSample()
