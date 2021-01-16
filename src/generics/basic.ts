@@ -21,11 +21,9 @@ export default function genericsBasicsSample() {
         (array: string[], initialValue: string): string
         (array: number[], initialValue: number): number
     }
-
     type GenericReduce<T> = {
         (array: T[], initialValue: T): T
     }
-
     const genericStringReduce: GenericReduce<string> = (array, initialValue) => {
         let result = initialValue
         for (let i = 0; i < array.length; i++) {
@@ -33,6 +31,12 @@ export default function genericsBasicsSample() {
         }
         return result
     }
-
     console.log(genericStringReduce(['1', '1'], '1'))
+
+    type GenericReduce2 = {
+        <T>(array: T[], initialValue: T): T
+        <U>(array: U[], initialValue: U): U
+    }
+    type GenericReduce3<T> = (array: T[], initialValue: T) => T
+    type GenericReduce4 = <T>(array: T[], initialValue: T) => T
 }
