@@ -23,4 +23,5 @@ export default function genericsAdvancedSample() {
 
     const strings = mapNumbersToNumbers([123, 456], (item) => String(item))
     console.log(strings)
+    // test
 }
