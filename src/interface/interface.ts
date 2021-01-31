@@ -28,3 +28,18 @@ const maboDon: MaboDon = {
     spicyLevel: 10,
     gram: 350,
 }
+
+interface Book {
+    page: number
+    title: string
+}
+
+interface Magazine extends Book {
+    cycle: 'daily' | 'weekly'
+}
+
+const jum: Magazine = {
+    cycle: 'weekly',
+    page: 300,
+    title: 'ジャンプ',
+}
