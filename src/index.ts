@@ -40,5 +40,7 @@
 // import genericsAdvancedSample from './generics/advanced'
 // genericsAdvancedSample()
 
-import callBackSample from './asynchronous/callback'
-callBackSample()
+// import callBackSample from './asynchronous/callback'
+// callBackSample()
+import promiseSample from './asynchronous/promise'
+promiseSample()
