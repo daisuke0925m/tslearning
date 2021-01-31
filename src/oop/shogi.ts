@@ -3,19 +3,22 @@ type Suji = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 type Dan = '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
 
 class Position {
-    // private修飾子のついたプロパティは、Positionクラスから生まれたインスタンスのみで使用できる
     constructor(private suji: Suji, private dan: Dan) {}
 
-    distanceForm(position: Position, player: Player) {
-        if (player == 'first') {
+    distanceFrom(position: Position, player: Player) {
+        if (player === 'first') {
             return {
                 suji: Math.abs(position.suji - this.suji),
                 dan: Math.abs(Number(position.dan) - Number(this.dan)),
             }
+        } else {
+            return {
+                suji: Math.abs(position.suji - this.suji),
+                dan: -Math.abs(Number(position.dan) - Number(this.dan)),
+            }
         }
     }
 }
-
 abstract class Piece {
     protected position: Position
 
@@ -28,4 +31,11 @@ abstract class Piece {
     }
 
     abstract canMoveTo(position: Position, player: Player): boolean
+}
+
+class Osho extends Piece {
+    canMoveTo(position: Position, player: Player): boolean {
+        const distance = this.position.distanceFrom(position, player)
+        return distance.suji < 2 && distance.dan < 2
+    }
 }
