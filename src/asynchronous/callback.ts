@@ -6,7 +6,7 @@ export default function callbackSample() {
             .then((res) => {
                 res.json()
                     .then((json) => {
-                        console.log(json)
+                        console.log('1', json)
                         return json
                     })
                     .catch((error) => {
@@ -19,5 +19,5 @@ export default function callbackSample() {
     }
 
     const pf = fetchProfile()
-    console.log(pf)
+    console.log('2', pf)
 }
