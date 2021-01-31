@@ -43,3 +43,18 @@ const jum: Magazine = {
     page: 300,
     title: 'ジャンプ',
 }
+
+type Booktype = {
+    page: number
+    title: string
+}
+
+interface Handbook extends Booktype {
+    theme: string
+}
+
+const cotrip: Handbook = {
+    page: 120,
+    title: 'ことリップ',
+    theme: '旅行',
+}
