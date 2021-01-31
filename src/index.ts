@@ -37,5 +37,8 @@
 // import genericsBasicSample from './generics/basic'
 // genericsBasicSample()
 
-import genericsAdvancedSample from './generics/advanced'
-genericsAdvancedSample()
+// import genericsAdvancedSample from './generics/advanced'
+// genericsAdvancedSample()
+
+import callBackSample from './asynchronous/callback'
+callBackSample()
