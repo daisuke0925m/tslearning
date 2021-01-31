@@ -58,3 +58,19 @@ const cotrip: Handbook = {
     title: 'ことリップ',
     theme: '旅行',
 }
+
+class Comic implements Book {
+    page: number
+    title: string
+
+    constructor(page: number, title: string, private publishYear: string) {
+        this.page = page
+        this.title = title
+    }
+
+    getPublishYear() {
+        return this.title + 'が発売されたのは' + this.publishYear + '年です'
+    }
+}
+
+const popularComic = new Comic(200, '毀滅のヤイバ', '2016')
