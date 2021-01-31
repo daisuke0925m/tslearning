@@ -42,5 +42,7 @@
 
 // import callBackSample from './asynchronous/callback'
 // callBackSample()
-import promiseSample from './asynchronous/promise'
-promiseSample()
+// import promiseSample from './asynchronous/promise'
+// promiseSample()
+import asyncAwaitSample from './asynchronous/asyncAwait'
+asyncAwaitSample()
